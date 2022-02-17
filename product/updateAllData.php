@@ -27,15 +27,6 @@ for($i=0;$i<$rowCount;$i++)
         mysqli_query($con,$sql);
     }
 
-    // $sql2 = "Select * from product";
-    // $sqlquery2 = mysqli_query($con,$sql2);
-    // $res = [];
-    // while ($row = mysqli_fetch_array($sqlquery2))
-    // {
-    //     array_push($res, $row);
-    // }
-    // print_r($res);
-
     $sql2 = "select * from product";
     $result2 = mysqli_query($con,$sql2);
     if(mysqli_num_rows($result2) > 0){

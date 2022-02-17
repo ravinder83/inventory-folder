@@ -67,11 +67,6 @@ while ($row = mysqli_fetch_array($exec_payment_mode)) {
                     <?php
                     foreach ($cart_details as $items) {
                         $totalprice += ((int)$items['product_price'] * (int)$items['qty']);
-                        // if (is_numeric($items['product_price']) && is_numeric($items['qty'])) {
-                        //     $totalprice += ($items['product_price'] * $items['qty']);
-                        //   } else {
-
-                        //   }
                     ?>
                         <tr>
                             <th><?php echo $items['product_name'] ?></th>
@@ -146,20 +141,11 @@ while ($row = mysqli_fetch_array($exec_payment_mode)) {
 <script>
     function calc_pending_amt() {
         var grand_total = document.getElementById("grand_total").value;
-        console.log(grand_total);
+        //console.log(grand_total);
         var paid_amt = document.getElementById("paid_amt").value;
-        console.log(paid_amt);
+        //console.log(paid_amt);
         var pending_amt = document.getElementById("pending_amt").value = grand_total - paid_amt;
-        console.log(pending_amt);
-        //   $.ajax({
-        //     type: "POST",
-        //     url: "searchCustomerProduct.php",
-        //     data: {search : search_term},
-        //     success: function(data)
-        //     {
-        //     $('#search-data').html(data);
-        //     }
-        // });
+        //console.log(pending_amt);
     }
 
     function calc_paid_amt() {

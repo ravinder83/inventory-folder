@@ -4,8 +4,6 @@
     $sql = "Select * from customer where id = '$cid'";
     $sqlquery = mysqli_query($con,$sql);
     $data = mysqli_fetch_array($sqlquery);
-    // echo "<pre>";
-    // print_r($data);
 ?>
 <!doctype html>
 <html lang="en">

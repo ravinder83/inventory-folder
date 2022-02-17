@@ -39,9 +39,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             $dbPass = $passwordCheck['password'];
             //$_SESSION['username'] = $passwordCheck['username'];
             setcookie('loginid', $passwordCheck['id'], time() + (86400 * 30), "/");  // (86400 * 30)
-            // $idn =  $_COOKIE['loginid'];
-            // echo $idn;  
-            // die();
             $passDecode = password_verify($password,$dbPass);
             if($passDecode)
 				{

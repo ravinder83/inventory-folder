@@ -15,9 +15,7 @@ $list = [];
 while($output = mysqli_fetch_array($result)){
    array_push($list,$output);
 }
-    //   echo "<pre>";
-    //   print_r($list);
-    //   die; 
+
 ?>
 
 <!doctype html>
@@ -41,26 +39,7 @@ while($output = mysqli_fetch_array($result)){
     <?php include '../header.php'; ?>
     <h5 class="container m-4">Pending Customer Detail</h5>
     <p class="text-danger" style="text-transform: capitalize;;"><b><?php echo $customer_name; ?></b></p>
-<!-- <?php
-    foreach ($list as $items) {
-    ?>
-        <div class="card mt-2" style="width: 28rem; margin-left:5%">
-            <div class="card-header bg-dark text-light">
-               <b> Product Name : <?php echo $items['product_name'] ?></b>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Price : <?php echo $items['price'] ?></li>
-                <li class="list-group-item">qty :   <?php echo $items['qty'] ?></li>
-                <li class="list-group-item">paid_amt :   <?php echo $items['paid_amt'] ?></li>
-                <li class="list-group-item">pending_amt :   <?php echo $items['pending_amt'] ?></li>
-                <li class="list-group-item">total_amt :   <?php echo $items['total_amt'] ?></li>
-                <li class="list-group-item">Date :   <?php echo $items['date'] ?></li>
-            </ul>
-        </div>
-        <hr>
-    <?php
-    }
-    ?> -->
+
     <div>
         <table class="table">
                 <thead>

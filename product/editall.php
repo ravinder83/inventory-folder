@@ -27,14 +27,10 @@ while ($row = mysqli_fetch_array($sqlquery)){
 
 <body style="background-color: #f0f2f7;">
 <?php include '../header.php' ?>
-    <!-- <form class="d-flex col-lg-2" action="search.php" method="GET">
-        <input class="form-control me-2" type="search" name="search" placeholder="Search Items" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-    </form> -->
+
     <?php if($row['role'] == 1){ ?>
     <form class="d-flex col-lg-2" action="searchedit.php" method="GET">
         <input class="form-control me-2" type="search" id="search" name="search" placeholder="Search Items" aria-label="Search" autocomplete="off">
-        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
     </form>
     <form id="idform">
       <?php

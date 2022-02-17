@@ -32,23 +32,6 @@ while ($row = mysqli_fetch_array($sqlquery)) {
     <h3 class="text-primary m-2"><a href="orderdetail.php"><i class="fas fa-backward"></i></a></h3>
     <h5 class="container m-4">Order item List</h5>
     <p class="text-danger" style="text-transform: capitalize;;"><b><?php echo $customer_name; ?></b></p>
-    <!-- <div class="card-header bg-dark text-light">
-               <b> Date : demo</b>
-            </div>   -->
-    <!-- <?php
-    foreach ($res as $items) {
-    ?>
-        <div class="card mt-2" style="width: 28rem; margin-left:5%">     
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Price : <?php echo $items['price'] ?></li>
-                <li class="list-group-item">qty :   <?php echo $items['qty'] ?></li>
-                <li class="list-group-item">Date :   <?php echo $items['date'] ?></li>
-            </ul>
-        </div>
-        <hr>
-    <?php
-    }
-    ?> -->
 
 <div>
         <table class="table">

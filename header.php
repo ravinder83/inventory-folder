@@ -6,9 +6,7 @@ if(isset ($_COOKIE['loginid'])){
   $sql = "Select * from user where id = '$id'";
   $query = mysqli_query($con,$sql);
   $row = mysqli_fetch_array($query);
-  // echo "<pre>";
-  // print_r($row);
-  // die;
+
 }
 ?>
 

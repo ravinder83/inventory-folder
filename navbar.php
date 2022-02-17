@@ -5,9 +5,7 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
               else  
               $url = "http://";      
               $url.= $_SERVER['HTTP_HOST'];     
-              $url.= $_SERVER['REQUEST_URI'];
-              // echo $url;
-              // die;    
+              $url.= $_SERVER['REQUEST_URI'];   
 ?>
 
 <!doctype html>
@@ -24,24 +22,6 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
 </head>
 
 <body style="background-color: #f0f2f7;";>
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <h3 class="navbar-brand">Inventory Stock Tracker</h3>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="dashboard.php">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="items.php">Items</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav> -->
 <div class="container-fluid" style="box-shadow: 20px 20px 50px #8aaae6 inset;">
   <div class="row">
     <?php 

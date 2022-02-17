@@ -7,26 +7,21 @@ $res = [];
 while ($row = mysqli_fetch_array($sqlquery)){
     array_push($res, $row);
 }
-// echo "<pre>";
-// echo $res[0]['customer_name'];
-// die;
+
 $sql2 = "SELECT DISTINCT orderitems.order_id from orderitems INNER JOIN orders ON orderitems.order_id = orders.id where orders.pending_amt != 0 AND orders.customer_id = 1";
 $sqlquery2 = mysqli_query($con,$sql2);
 $res2 = [];
 while ($row2 = mysqli_fetch_array($sqlquery2)){
     array_push($res2, $row2);
 }
-// echo "<pre>";
-// print_r($res2);
-// echo "</pre>";
+
 $idd = [];
 foreach($res2 as $arr)
 {
   array_push($idd,$arr['order_id']);
 }
 $encoded_data = json_encode($idd);
-// echo $encoded_data;
-// die;
+
 ?>
 
 <!doctype html>

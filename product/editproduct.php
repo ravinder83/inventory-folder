@@ -4,9 +4,7 @@
     $sql = "Select * from product where id = '$itemid'";
     $sqlquery = mysqli_query($con,$sql);
     $data = mysqli_fetch_array($sqlquery);
-    // echo "<pre>";
-    // echo $data['name'];
-    // die();
+
 
     if(isset($_POST['submit']))
 		{

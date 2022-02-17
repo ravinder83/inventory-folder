@@ -31,10 +31,7 @@ $tot_amount = mysqli_fetch_array($exec_total);
 $total_qty = "select sum(qty) as 'qty' from orderitems";
 $exec_qty = mysqli_query($con,$total_qty);
 $tot_qty = mysqli_fetch_array($exec_qty);
-// echo $tot_amount['tot_amt'];
-// echo "<pre>";
-// echo $orders;
-// die;
+
 ?>
 
 <!doctype html>
